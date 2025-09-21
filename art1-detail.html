@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>작품1 상세 | Artist Name</title>
+  <style>
+    :root { --bg:#ffffff; --fg:#111111; --muted:#555555; --accent:#222222; --border:#e6e6e6; --maxw:960px; --radius:14px; }
+    *{box-sizing:border-box} html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font:16px/1.7 system-ui,-apple-system,Segoe UI,Roboto,Noto Sans KR,Arial,sans-serif}
+    a{color:var(--fg);text-decoration:none} a:hover{opacity:.7}
+    .wrap{width:min(100% - 32px,var(--maxw));margin-inline:auto}
+    header{border-bottom:1px solid var(--border);position:sticky;top:0;background:#fff;z-index:10}
+    header .bar{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+    .title{font-weight:800;font-size:clamp(20px,2.6vw,24px)}
+    .btn{display:inline-flex;gap:8px;align-items:center;padding:8px 12px;border:1px solid var(--border);border-radius:10px;background:#fff}
+    .hero{padding:28px 0}
+    .yt-wrap{position:relative;width:100%;padding-bottom:56.25%;border-radius:12px;border:1px solid var(--border);background:#000;overflow:hidden}
+    .yt-wrap iframe{position:absolute;inset:0;width:100%;height:100%}
+    .meta{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:18px}
+    .card{border:1px solid var(--border);border-radius:12px;padding:14px;background:#fff}
+    .card h3{margin:0 0 8px;font-size:16px}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:18px}
+    figure{margin:0}
+    figure img{width:100%;border:1px solid var(--border);border-radius:12px;background:#fafafa}
+    @media (max-width:860px){.meta,.grid{grid-template-columns:1fr}}
+    footer{border-top:1px solid var(--border);padding:24px 0;color:var(--muted);margin-top:28px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap bar">
+      <div class="title">작품1 상세</div>
+      <nav>
+        <a class="btn" href="index.html">← 메인으로</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="yt-wrap" aria-label="YouTube video player">
+        <!-- YouTube ID만 바꾸세요 -->
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                title="작품1 영상"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section class="meta">
+      <div class="card">
+        <h3>작품 정보</h3>
+        <p><strong>제목:</strong> 작품1 (Work 1)</p>
+        <p><strong>년도:</strong> 2025</p>
+        <p><strong>매체:</strong> Video Installation</p>
+        <p><strong>규격:</strong> HD 1920×1080 (16:9)</p>
+        <p><strong>설명:</strong> 빛의 층위와 공간의 감각을 비디오로 구성한 설치 작업.</p>
+      </div>
+      <div class="card">
+        <h3>전시/배포</h3>
+        <p><strong>전시:</strong> Threshold of Light (2025, Seoul)</p>
+        <p><strong>링크:</strong> <a href="https://youtube.com" target="_blank" rel="noopener">YouTube</a></p>
+        <p><strong>문의:</strong> <a href="mailto:you@example.com">you@example.com</a></p>
+      </div>
+    </section>
+
+    <section class="grid">
+      <figure>
+        <img src="https://images.unsplash.com/photo-1511821031026-2c4f2c1a0b27?w=1600&q=70" alt="스틸컷 1">
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?w=1600&q=70" alt="스틸컷 2">
+      </figure>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      © <script>document.write(new Date().getFullYear())</script> Artist Name
+    </div>
+  </footer>
+</body>
+</html>
